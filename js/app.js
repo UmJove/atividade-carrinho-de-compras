@@ -22,16 +22,15 @@ function adicionar() {
     // atualizar total do produto
     total = total + subtotal;
     valorTotal.innerText = `R$ ${total}`;
+    document.getElementById('quantidade').value = '';
 
-
-
-
-
-    // let valorTotal = document.getElementById('valor-total');
-    // valorTotal.innerHTML. = ;
 
 console.log('confirma4')
 
 }
    
-   
+function limpar() {
+    total = 0;
+    valorTotal.innerText = `R$ ${total}`;
+    carrinho.innerHTML = '';
+}
